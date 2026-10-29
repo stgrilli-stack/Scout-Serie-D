@@ -1,0 +1,39 @@
+SCOUT PALLAVOLO - VERSIONE OFFLINE
+==================================
+
+Contenuto della cartella
+- index.html            l'app
+- manifest.webmanifest  la rende installabile come app
+- sw.js                 la fa funzionare senza connessione
+- icon-192.png, icon-512.png   icona
+
+Perche' serve un sito
+Per funzionare offline la pagina deve essere pubblicata una volta su un indirizzo
+https. Dopo la prima apertura con connessione, il telefono la conserva e la apre
+anche senza segnale. Non e' possibile farlo aprendo semplicemente il file dal
+telefono.
+
+Come pubblicarla (gratis, da fare una sola volta)
+Opzione A - GitHub Pages
+ 1. Crea un account su github.com e un nuovo repository pubblico (es. scout).
+ 2. Carica tutti i file di questa cartella (Add file > Upload files).
+ 3. Settings > Pages > Branch: main, cartella /root > Save.
+ 4. Dopo un minuto trovi l'indirizzo: https://TUONOME.github.io/scout/
+
+Opzione B - Netlify Drop
+ 1. Vai su app.netlify.com/drop, accedi con un account gratuito.
+ 2. Trascina la cartella con questi file: ottieni subito un indirizzo https.
+
+Come installarla su Android (smartphone e tablet)
+ 1. Apri l'indirizzo con Chrome, con connessione attiva.
+ 2. Attendi qualche secondo, poi menu di Chrome (tre puntini) > "Installa app"
+    oppure "Aggiungi a schermata Home".
+ 3. Apri l'app una volta con connessione: da quel momento funziona anche offline.
+ 4. Prova: metti il telefono in modalita' aereo e riaprila.
+
+Cose da sapere
+- I dati (partita in corso e archivio) restano salvati sul dispositivo. Se cancelli
+  i dati di Chrome o disinstalli l'app, vengono persi. Esporta il CSV dopo ogni partita.
+- Telefono e tablet hanno dati separati.
+- Se in futuro sostituisci index.html con una versione nuova, cambia in sw.js la
+  scritta "scout-v1" in "scout-v2": cosi' i dispositivi scaricano la novita'.
